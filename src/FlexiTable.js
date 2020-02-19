@@ -205,6 +205,7 @@ export default class FlexiTable extends React.Component {
       halfGutterWidth,
       marginWidth,
       className,
+      onClickRow
     } = this.props
     const { calcColumnWidths } = this.state
 
@@ -232,6 +233,7 @@ export default class FlexiTable extends React.Component {
           isLastRow={i === data.length - 1}
           halfGutterWidth={halfGutterWidth}
           marginWidth={marginWidth}
+          onClickRow={onClickRow}
         />
       )
     })
