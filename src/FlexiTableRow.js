@@ -34,6 +34,7 @@ export default class FlexiTableRow extends React.Component {
       isLastRow,
       halfGutterWidth,
       marginWidth,
+      onClickRow
     } = this.props
 
     const cells = columns.map((x, i) => {
@@ -55,7 +56,10 @@ export default class FlexiTableRow extends React.Component {
     })
 
     return (
-      <div className={`FlexiTableBodyRow FlexiTableRow FlexiTableRow--row-number-${rowNumber}`} >
+      <div
+        onClick={onClickRow}
+        className={`FlexiTableBodyRow FlexiTableRow FlexiTableRow--row-number-${rowNumber}`}
+      >
         {cells}
       </div>
     )
