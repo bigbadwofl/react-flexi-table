@@ -57,7 +57,7 @@ export default class FlexiTableRow extends React.Component {
 
     return (
       <div
-        onClick={onClickRow.bind(null, rowNumber, 3)}
+        onClick={onClickRow.bind(null, rowNumber)}
         className={`FlexiTableBodyRow FlexiTableRow FlexiTableRow--row-number-${rowNumber}`}
       >
         {cells}
